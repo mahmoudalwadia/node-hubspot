@@ -1,12 +1,12 @@
 import { RequestPromise } from 'request-promise'
-declare type HubspotImage = {
+declare interface hubspotImage {
   cloud_key: string
   friendly_url: string
   image_name: string
   s3_url: string
 }
 
-declare type HubspotFile = {
+declare interface hubspotFile {
   alt_key: string
   alt_key_hash: string
   alt_url: string
@@ -46,7 +46,7 @@ declare type HubspotFile = {
   width: number
 }
 
-declare class File {
+declare class file {
   get(opts?: {}): RequestPromise
 
   getOne(id: number): RequestPromise
@@ -74,4 +74,6 @@ declare class File {
   ): RequestPromise
 }
 
-export { File, HubspotFile, HubspotImage }
+export type File = file
+export type HubspotFile = hubspotFile
+export type HubspotImage = hubspotImage

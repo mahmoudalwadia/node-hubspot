@@ -1,7 +1,7 @@
 import { RequestPromise } from 'request-promise'
 import { Properties } from './contact_property'
 
-declare class Contact {
+declare class contact {
   get(opts?: {}): RequestPromise
 
   getAll(opts?: {}): RequestPromise
@@ -47,4 +47,4 @@ declare class Contact {
   properties: Properties
 }
 
-export { Contact }
+export type Contact = contact

@@ -1,9 +1,9 @@
 import { RequestPromise } from 'request-promise'
 
-declare class Pipeline {
+declare class pipeline {
   get(opts?: {}): RequestPromise
 
   getById(number: string): RequestPromise
 }
 
-export { Pipeline }
+export type Pipeline = pipeline

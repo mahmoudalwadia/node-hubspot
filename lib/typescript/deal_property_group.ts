@@ -1,6 +1,6 @@
 import { RequestPromise } from 'request-promise'
 
-declare class Groups {
+declare class groups {
   getAll(options?: {}): RequestPromise
 
   get(query?: {}): RequestPromise
@@ -14,4 +14,4 @@ declare class Groups {
   upsert(data: {}): RequestPromise
 }
 
-export { Groups }
+export type Groups = groups

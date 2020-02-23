@@ -1,7 +1,7 @@
 import { RequestPromise } from 'request-promise'
 import { Properties } from './deal_property'
 
-declare class Deal {
+declare class deal {
   get(opts?: {}): RequestPromise
 
   getRecentlyCreated(opts?: {}): RequestPromise
@@ -27,4 +27,4 @@ declare class Deal {
   properties: Properties
 }
 
-export { Deal }
+export type Deal = deal

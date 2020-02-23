@@ -7,7 +7,7 @@ export interface IHubspotCRMAssociation {
   definitionId: number
 }
 
-declare class Associations {
+declare class associations {
   create(data: IHubspotCRMAssociation): RequestPromise
 
   createBatch(data: IHubspotCRMAssociation[]): RequestPromise
@@ -17,4 +17,4 @@ declare class Associations {
   deleteBatch(data: IHubspotCRMAssociation[]): RequestPromise
 }
 
-export { Associations }
+export type Associations = associations

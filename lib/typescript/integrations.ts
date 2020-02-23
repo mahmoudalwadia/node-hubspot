@@ -1,7 +1,7 @@
 import { RequestPromise } from 'request-promise'
 
-declare class Integrations {
+declare class integrations {
   getAccountDetails(): RequestPromise
 }
 
-export { Integrations }
+export type Integrations = integrations

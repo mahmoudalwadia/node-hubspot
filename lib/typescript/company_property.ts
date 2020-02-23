@@ -2,7 +2,7 @@ import { RequestPromise } from 'request-promise'
 
 import { Groups } from './company_property_group'
 
-declare class Properties {
+declare class properties {
   getAll(options?: {}): RequestPromise
 
   get(query?: {}): RequestPromise
@@ -18,4 +18,4 @@ declare class Properties {
   groups: Groups
 }
 
-export { Properties }
+export type Properties = properties

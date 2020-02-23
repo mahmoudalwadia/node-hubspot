@@ -1,6 +1,6 @@
 import { RequestPromise } from 'request-promise'
 
-declare class Engagement {
+declare class engagement {
   create(data: {}): RequestPromise
 
   get(opts?: {}): RequestPromise
@@ -14,4 +14,4 @@ declare class Engagement {
   getCallDispositions(): RequestPromise
 }
 
-export { Engagement }
+export type Engagement = engagement

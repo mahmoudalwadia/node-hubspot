@@ -2,7 +2,7 @@ import { RequestPromise } from 'request-promise'
 
 import { Properties } from './company_property'
 
-declare class Company {
+declare class company {
   get(opts?: {}): RequestPromise
 
   getById(id: number): RequestPromise
@@ -30,4 +30,4 @@ declare class Company {
   properties: Properties
 }
 
-export { Company }
+export type Company = company

@@ -1,6 +1,6 @@
 import { RequestPromise } from 'request-promise'
 
-declare class Properties {
+declare class properties {
   getAll(options?: {}): RequestPromise
 
   get(): RequestPromise
@@ -24,4 +24,4 @@ declare class Properties {
   delete(name: string): RequestPromise
 }
 
-export { Properties }
+export type Properties = properties

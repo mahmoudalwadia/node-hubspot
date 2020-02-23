@@ -1,7 +1,7 @@
 import { RequestPromise } from 'request-promise'
 
-declare class Page {
+declare class page {
   get(opts?: {}): RequestPromise
 }
 
-export { Page }
+export type Page = page

@@ -1,6 +1,6 @@
 import { RequestPromise } from 'request-promise'
 
-declare class MarketingEmail {
+declare class marketingEmail {
   getAll(opts?: {}): RequestPromise
 
   get(opts?: {}): RequestPromise
@@ -14,4 +14,4 @@ declare class MarketingEmail {
   delete(id: string): RequestPromise
 }
 
-export { MarketingEmail }
+export type MarketingEmail = marketingEmail

@@ -1,10 +1,10 @@
 import { RequestPromise } from 'request-promise'
 
-declare class OAuth {
+declare class oAuth {
   getAuthorizationUrl(opts?: {}): string
   getAccessToken(data: { code: string }): RequestPromise
   refreshAccessToken(): RequestPromise
   getPortalInfo(token?: string): RequestPromise
 }
 
-export { OAuth }
+export type OAuth = oAuth

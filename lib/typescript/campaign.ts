@@ -1,6 +1,6 @@
 import { RequestPromise } from 'request-promise'
 
-declare class Campaign {
+declare class campaign {
   get(opts?: {}): RequestPromise
 
   getOne(id: number, appId: number): RequestPromise
@@ -8,4 +8,4 @@ declare class Campaign {
   events(opts?: {}): RequestPromise
 }
 
-export { Campaign }
+export type Campaign = campaign

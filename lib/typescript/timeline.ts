@@ -1,6 +1,6 @@
 import { RequestPromise } from 'request-promise'
 
-declare class Timeline {
+declare class timeline {
   createEventType(applicationId: number, userId: number, data: {}): RequestPromise
 
   updateEventType(applicationId: number, eventTypeId: number, data: {}): RequestPromise
@@ -11,4 +11,4 @@ declare class Timeline {
 
   createTimelineEvent(applicationId: number, eventTypeId: number, data: {}): RequestPromise
 }
-export { Timeline }
+export type Timeline = timeline

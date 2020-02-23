@@ -1,6 +1,6 @@
 import { RequestPromise } from 'request-promise'
 
-declare class Workflow {
+declare class workflow {
   get(workflowId: number): RequestPromise
 
   getAll(): RequestPromise
@@ -16,4 +16,4 @@ declare class Workflow {
   current(contactId: string): RequestPromise
 }
 
-export { Workflow }
+export type Workflow = workflow

@@ -1,6 +1,7 @@
 import { RequestPromise } from 'request-promise'
+import { format } from 'url'
 
-declare class Form {
+declare class form {
   getAll(opts?: {}): RequestPromise
 
   get(opts?: {}): RequestPromise
@@ -24,4 +25,4 @@ declare class Form {
   getUploadedFileByUrl(url: string): RequestPromise
 }
 
-export { Form }
+export type Form = form

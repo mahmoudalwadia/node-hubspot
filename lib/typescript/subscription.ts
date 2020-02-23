@@ -1,8 +1,8 @@
 import { RequestPromise } from 'request-promise'
 
-declare class Subscription {
+declare class subscription {
   get(opts?: {}): RequestPromise
   subscribeToAll(email: string): RequestPromise
 }
 
-export { Subscription }
+export type Subscription = subscription

@@ -1,7 +1,7 @@
 import { Associations } from './crm_associations'
 
-declare class CRM {
+declare class cRM {
   associations: Associations
 }
 
-export { CRM }
+export type CRM = cRM

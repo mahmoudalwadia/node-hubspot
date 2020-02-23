@@ -1,6 +1,6 @@
 import { RequestPromise } from 'request-promise'
 
-declare class List {
+declare class list {
   get(opts?: {}): RequestPromise
 
   getOne(id: number): RequestPromise
@@ -22,4 +22,4 @@ declare class List {
   removeContacts(id: number, contactBody: {}): RequestPromise
 }
 
-export { List }
+export type List = list

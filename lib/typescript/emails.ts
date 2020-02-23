@@ -1,7 +1,7 @@
 import { RequestPromise } from 'request-promise'
 
-declare class Emails {
+declare class emails {
   sendTransactionalEmail(data: {}): RequestPromise
 }
 
-export { Emails }
+export type Emails = emails

@@ -1,7 +1,7 @@
 import { RequestPromise } from 'request-promise'
 
-declare class Broadcast {
+declare class broadcast {
   get(opts?: {}): RequestPromise
 }
 
-export { Broadcast }
+export type Broadcast = broadcast
