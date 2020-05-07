@@ -11,7 +11,7 @@ declare class company {
 
   getRecentlyModified(opts?: {}): RequestPromise
 
-  getByDomain(domain: string): RequestPromise
+  getByDomain(domain: string, data: {}): RequestPromise
 
   create(data: {}): RequestPromise
 
