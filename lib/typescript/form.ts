@@ -1,5 +1,4 @@
 import { RequestPromise } from 'request-promise'
-import { format } from 'url'
 
 declare class form {
   getAll(opts?: {}): RequestPromise
